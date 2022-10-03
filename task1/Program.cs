@@ -48,4 +48,18 @@ void PrintArray(string[] array)
 		Console.WriteLine();
 	}
 }
-		
+
+// 4. Вывод на печать условий задачи		
+void PrintTask(string[] array)
+{
+	Console.WriteLine("Первоначальный массив: ");
+	PrintArray(array);
+	string[] shortArray = GetShortWordsArray(array);
+	Console.WriteLine($"Итоговый массив (слова, в которых меньше или {MAX_LENGTH} символа)");
+	PrintArray(shortArray);
+	Console.WriteLine();
+}
+// 5. Вывод на печать функции	
+PrintTask(arr1);
+PrintTask(arr2);
+PrintTask(arr3);
