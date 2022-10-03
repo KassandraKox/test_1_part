@@ -15,7 +15,7 @@ string[] arr3 = {"Russia", "Denmark", "Kazan"};
 		
 int MAX_LENGTH = 3;
 		
-// проверка количества символов
+// 2. проверка количества символов
 string[] GetShortWordsArray(string[] array)
 {
 	int length = array.Length;			
@@ -34,3 +34,18 @@ string[] GetShortWordsArray(string[] array)
 			
 	return result;
 }
+
+// 3. Функция вывод на печать массива	
+void PrintArray(string[] array)
+{
+	if(array.Length == 0)
+	{
+		Console.WriteLine("Массив пуст.");
+	}
+	else
+	{
+		Array.ForEach(array, (str) => Console.Write($"{str} "));
+		Console.WriteLine();
+	}
+}
+		
